@@ -1,0 +1,80 @@
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 0px 50px;
+	max-width: 1100px;
+}
+.game {
+	max-width: 900px;
+	background: url("../img/start.jpg") 0 0 / cover no-repeat;
+	padding-top: 20px;
+	min-height: 500px;
+}
+img {
+	max-width: 900px;
+	margin-bottom: 50px;
+}
+.line {
+	width: 50px;
+	height: 50px;
+	background: rgb(23, 144, 201);
+}
+
+.line:nth-of-type(3) {
+	margin-left: 850px;
+}
+.line:nth-of-type(5) {
+	width: 30px;
+}
+.line:nth-of-type(6) {
+	height: 150px;
+}
+.line:nth-of-type(5) ~ .line {
+	width: 20px;
+}
+.line:nth-of-type(7) {
+	background: crimson;
+}
+.line:not(:first-of-type) {
+	visibility: hidden;
+}
+
+.line:hover:nth-of-type(1) + .line:nth-of-type(2),
+.line:hover:nth-of-type(2) {
+	visibility: visible;
+}
+.line:hover:nth-of-type(2),
+.line:nth-of-type(4) {
+	width: 100%;
+}
+
+.line:hover:nth-of-type(2) + .line:nth-of-type(3),
+.line:hover:nth-of-type(3) {
+	visibility: visible;
+}
+
+.line:hover:nth-of-type(3) + .line:nth-of-type(4),
+.line:hover:nth-of-type(4) {
+	visibility: visible;
+}
+
+.line:hover:nth-of-type(4) + .line:nth-of-type(5),
+.line:hover:nth-of-type(5) {
+	visibility: visible;
+}
+
+.line:hover:nth-of-type(5) + .line:nth-of-type(6),
+.line:hover:nth-of-type(6) {
+	visibility: visible;
+}
+
+.line:hover:nth-of-type(6) + .line:nth-of-type(7),
+.line:hover:nth-of-type(7) {
+	visibility: visible;
+}
+
+.line:hover:nth-of-type(7) + .line-img,
+.line-img:hover {
+	visibility: visible;
+}
