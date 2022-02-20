@@ -22,7 +22,7 @@ img {
 }
 
 .line:nth-of-type(3) {
-	margin-left: 850px;
+	margin: 0 0 0 auto;
 }
 .line:nth-of-type(5) {
 	width: 30px;
